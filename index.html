@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+<head>
+<meta charset = "utf-8">
+<meta name = "viewport"
+content ="width = device - width">
+<title>Indirect connection of SL7000 energy meters with and without VTs</title>
+<link href="https://fonts.googleapis.com/css2?family=Gelasio:ital@1&family=Lisu+Bosa:ital@1&family=Old+Standard+TT:ital@1&display=swap"
+	rel="stylesheet">
+<link href="style.css" 
+	rel="stylesheet" >
+</head>
+<body>
+<header>
+<h1>Indirect connection of energy SL7000 meters  with VTs and without VTs</h1>
+</header>
+<!--My main nav code-->
+<nav>
+<ul>
+			<li id="home"><a href="#">Home</a></li>
+                         <li id = "down"><a href="#">Downloads</a></li>
+			<li id = "about"><a href="#">About</a></li>
+			<li id = "project"><a href="#">Project</a></li>
+			<li id="myDoc"><a href="#">Documents</a></li>
+		</ul>
+<form>
+<input type="search" name="q" placeholder="search query">
+<input type="submit" value="Valid">
+</form>
+</nav>
+
+<main>
+<article>
+<h2>
+Indirection connection without VTs
+</h2>
+<ol>
+<li> <spam style = "color: blue">Introduction</spam></li>
+<p>
+The indirect connection of SL7000 energy meters without measurement voltage transformers is the type of connection in which connections to the voltage circuits of 
+the meter are done directly. The energy meter and current carrying conductor or busbar of the system both share the same voltage magnetude. This therefore means that any voltage 
+perturbation on the current carrying conductors 
+is channelled directly to the energy meter. This method of connection exposes the energy meter more to external influences like voltage surges and over currents. 
+A line diagram of this method of connection is shown below in figure 01.
+<img src = "withoutTT.png" alt = "Indirect connection without VTs" id = "images"/>
+</p>
+<div style = "text-align:center"><strong>
+Figure 01: Indirect connection of SL7000 energy meter without VT
+</strong>
+</div>
+</ol>
+<p> From figure 01 above, we can retrieve the following information:</p>
+<ul>
+<li>Connections to the voltage circuits of the energy meter are done directly, passing through the circuit breakers. Overcurrent protection is available, but no overvoltage protection.</li>
+<li>Current circuits connections are done indirectly, passing through the current transformers.</li>
+</ul>
+<p>
+<strong>NB</strong>: This configuration method is suitable for connecting energy meters in a system with lower voltage variations. For example, isolated systems.
+</p>
+<h3> 
+Indirection connection with VTs
+</h3>
+<ol>
+<li> <spam style = "color: blue">Introduction</spam></li>
+<p>
+The indirect connection of SL7000 energy meters with VTs is the one in which connections to the energy meter's voltage circuits are carried out using VTs. 
+Voltage perturbation on the busbar will not affect the energy meter as it is been scaled down by the VTs. The voltage transformers as a result provide protections against surges 
+and overcurrent.
+A line diagram of this method of connection is shown in figure 02 below.
+<img src = "withTT.png" alt = "Indirect connection with VTs" id = "images"/>
+</p>
+<div style = "text-align:center"><strong>
+Figure 02: Indirect connection of SL7000 energy meter with VT
+</strong>
+</div>
+</ol>
+<p> From figure 02 above, we can retrieve the following information:</p>
+<ul>
+<li>Connections to the voltage circuits of the meter is done indirectly passing through VTs, the circuit breaker and the voltage measurement boxes . Overvoltage and overcurrent protection are available.</li>
+<li>The current circuit connections are made indirectly, passing through the CTs and the current measurement boxes.</li>
+</ul>
+<p>
+<strong>NB</strong>: This configuration method is the most suitable method for connecting energy meters as it provides protection against overvoltages which are in most cases the main cause of meter failures.</br>
+Eventhough it is the most suitable method for connecting energy meters, it can also cause meter failures and false readings if the VTs used are poorly selected. 
+For example using protection voltage transformers for measurement is relatively a bad idea as these transformers do not get saturated quickly under fault conditions as compared to measurement VTs. 
+In addition, they also produce distorted ouput under fault conditions which will enable meters to produce false readings.</br>
+Thus, proper care should be taken when selecting voltage transformers for measurement to ensure the chosen VTs are main for measurements. 
+To better comprehend this, you can check out at:<spam style = "color:blue"> <a href="https://desmond-zeh.github.io/VT.github.io/">criteria for selecting VTs for measurements</a>.</spam>
+</ol>
+<p>
+<spam style ="color:brown"><strong>Conclusion</strong></spam></br>
+Studies have proven that the constant voltage flow of the electrical system can be disrupted by sudden, brief power demands. 
+Hundreds of these small power surges occur every day, usually when devices with motors turn on or off, diverting electricity between them. Additionally, it is also stated that it is possible for a system to operate for hundreds of hours without sufficient current increase.
+ In addition, It is relatively difficult to protect energy meters against overvoltages using a protective device (e.g surge protector), because each protective device has a threshold value that must be exceeded before it can react. 
+A digital meter has very fragile electronic components like AD converters, micro controller, capacitors, resistors, MCT and cannot wait for a protective device to reach its threshold level. 
+Analog meters will operate normally during power surges because they do not contain semiconductor components.
+Therefore, a better way to improve the metering system is by applying the indirect connection with voltage transformers method.
+</p>
+</article>
+</main>
+
+<script src="main.js" differ></script>
+<!---My google translator code-->
+  <div id="google_translate_element"></div>
+	
+	<script type="text/javascript" >
+		function googleTranslateElementInit() {
+			new google.translate.TranslateElement(
+				{pageLanguage: 'en'},
+				'google_translate_element'
+			);
+		}
+	</script>
+	
+	<script type="text/javascript" src=
+"https://translate.google.com/translate_a/element.js?
+		cb=googleTranslateElementInit">
+	</script>
+<footer>
+It’s your <strong>attitude</strong>, not your <strong>aptitude</strong> that determines your <strong>altitude</strong>.
+</footer>
+</body>
+</html>
